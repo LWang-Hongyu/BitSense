@@ -32,10 +32,10 @@ We require the following dependencies to run BitSense simulator programs on Linu
 
 Simulator programs also make use of three third-party libraries, namely [eigen](https://gitlab.com/libeigen/eigen), [fmt](https://github.com/fmtlib/fmt), and [tomlplusplus](https://github.com/marzer/tomlplusplus). They are maintained as git submodules. Hence, don't forget to clone them with `git submodule update --init`.
 
-'''git clone https://github.com/PyMesh/PyMesh.git
+```git clone https://github.com/PyMesh/PyMesh.git
 cd PyMesh
 git submodule update --init
-'''
+```
 
 
 Besides, make sure your C++ compiler supports C++17 and the python interpreter version is at least 3.7 to enable essential library features.
