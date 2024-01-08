@@ -30,6 +30,15 @@ We require the following dependencies to run BitSense simulator programs on Linu
 | **libpcap** (>=1.9) | `sudo apt-get install libpcap-dev -y` | `brew install libpcap` |
 | **PcapPlusPlus** (>=21.05) | Method 1. Build from [source](https://pcapplusplus.github.io/docs/install#build-from-source) using its default configuration and installation directory <br />Method 2. `brew install pcapplusplus`  | `brew install pcapplusplus` |
 
+```shell
+安装pcapplusepluse
+git clone https://github.com/seladb/PcapPlusPlus.git
+cd PcapPlusPlus
+cmake -S . -B build
+cd build
+make
+```
+
 Simulator programs also make use of three third-party libraries, namely [eigen](https://gitlab.com/libeigen/eigen), [fmt](https://github.com/fmtlib/fmt), and [tomlplusplus](https://github.com/marzer/tomlplusplus). They are maintained as git submodules. Hence, don't forget to clone them with `git submodule update --init`.
 
 ```shell
