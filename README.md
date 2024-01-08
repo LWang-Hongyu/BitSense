@@ -37,6 +37,7 @@ cd PcapPlusPlus
 cmake -S . -B build
 cd build
 make
+sudo cmake --install .
 ```
 
 Simulator programs also make use of three third-party libraries, namely [eigen](https://gitlab.com/libeigen/eigen), [fmt](https://github.com/fmtlib/fmt), and [tomlplusplus](https://github.com/marzer/tomlplusplus). They are maintained as git submodules. Hence, don't forget to clone them with `git submodule update --init`.
